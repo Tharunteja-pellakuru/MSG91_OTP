@@ -191,7 +191,8 @@ function MobileStep({ onWidgetSuccess, onWidgetError }) {
      * The identifier must include the country code prefix (91 for India).
      */
     window.initSendOTP({
-      widgetId:   MSG91_WIDGET_ID,
+      widgetId:   '3666696a7636393337373030',
+      tokenAuth:  '524555TKfQQx5vIkDv6a27ea21P1',   // ← required by otp-provider.js; absence causes "Token is missing!"
       identifier: `91${mobile}`,    // MSG91 requires country code prefix
 
       /**
